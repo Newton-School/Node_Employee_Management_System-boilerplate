@@ -5,8 +5,7 @@ const createEmployee = async (req, res) => {
   try {
     // Write a code here to store Employee data
   } catch (err) {
-    console.error('Failed to create user', err);
-    res.status(500).json({ error: 'Failed to create user' });
+    res.status(500).json({ error: 'Failed to create employee' });
   }
 };
 
