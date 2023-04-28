@@ -14,7 +14,6 @@ const getEmployee = async (req, res) => {
   try {
     // Write a code here to get Employee from a Particular id
   } catch (err) {
-    console.error('Failed to get employee details', err);
     res.status(500).json({ error: 'Failed to get employee details' });
   }
 };
@@ -24,7 +23,6 @@ const updateEmployee = async (req, res) => {
   try {
     //Write a code here for updating Employee details using 'PUT' request
   } catch (err) {
-    console.error('Failed to update employee details', err);
     res.status(500).json({ error: 'Failed to update employee details' });
   }
 };
@@ -33,7 +31,6 @@ const deleteEmployee = async (req, res) => {
   try {
     //Write a code here for Deleting all the employees whose salary is greater than 10000
   } catch (err) {
-    console.error('Failed to delete employees', err);
     res.status(500).json({ error: 'Failed to delete employees' });
   }
 };
